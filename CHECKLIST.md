@@ -11,7 +11,7 @@ A template for creating new repositories.
 
 [![Renovate enabled](https://img.shields.io/badge/Renovate-enabled-brightgreen.svg?logo=renovatebot&logoColor&style=flat-square)](https://renovatebot.com)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
-[![License](https://img.shields.io/github/license/vidavidorra/repo-template.svg?style=flat-square)](LICENSE.md)
+[![License](https://img.shields.io/github/license/project-zro/projects.svg?style=flat-square)](LICENSE.md)
 
 <a name="toc"></a>
 
@@ -28,16 +28,16 @@ A template for creating new repositories.
 
 This describes how to use this template, for which there are two options.
 
-1. Create a new repository on GitHub and select `vidavidorra/repo-template` as _Repository template_.
+1. Create a new repository on GitHub and select `project-zro/projects` as _Repository template_.
 2. Create a new empty repository on and merge this template.
    ```shell
    $ git commit --allow-empty -m 'chore: create HEAD'
-   $ git remote add -t main upstream git@github.com:vidavidorra/repo-template.git
+   $ git remote add -t main upstream git@github.com:project-zro/projects.git
    $ export REPO_TEMPLATE_TAG="$(git -c 'versionsort.suffix=-' ls-remote --exit-code --refs --sort='version:refname' --tags upstream 'v*.*.*' | tail --lines=1 | cut --delimiter='/' --fields=3)"
    $ export REPO_TEMPLATE_COMMIT="$(git -c 'versionsort.suffix=-' ls-remote --exit-code --refs --sort='version:refname' --tags upstream 'v*.*.*' | tail --lines=1 | cut --characters=1-7)"
    $ git fetch --no-tags upstream tag "${REPO_TEMPLATE_TAG}"
    $ git merge --allow-unrelated-histories --squash "${REPO_TEMPLATE_TAG}"
-   $ git commit --message "chore: initialise from vidavidorra/repo-template@${REPO_TEMPLATE_COMMIT} (${REPO_TEMPLATE_TAG})"
+   $ git commit --message "chore: initialise from project-zro/projects@${REPO_TEMPLATE_COMMIT} (${REPO_TEMPLATE_TAG})"
    $ git tag --delete "${REPO_TEMPLATE_TAG}"
    $ git remote remove upstream
    $ git push
@@ -53,7 +53,7 @@ Please refer to the [docs](docs), for the documentation.
 
 ## Contributing
 
-Please [create an issue](https://github.com/vidavidorra/repo-template/issues/new/choose) if you have a bug report, feature proposal or question that does not yet exist.
+Please [create an issue](https://github.com/project-zro/projects/issues/new/choose) if you have a bug report, feature proposal or question that does not yet exist.
 
 Please give this project a star ⭐ if you like it and consider becoming a [sponsor](https://github.com/sponsors/jdbruijn) to support this project.
 
@@ -62,12 +62,12 @@ Please refer to the [contributing guide](https://github.com/vidavidorra/.github/
 [![Conventional Commits: 1.0.0](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
 [![Code style](https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier&style=flat-square)](https://github.com/prettier/prettier)
 [![Linting](https://img.shields.io/badge/linting-ESLint-lightgrey.svg?logo=eslint&style=flat-square)](https://eslint.org)
-[![Lint commit messages](https://img.shields.io/github/workflow/status/vidavidorra/repo-template/Lint%20commit%20messages?logo=github&label=Lint%20commit%20messages&style=flat-square)](https://github.com/vidavidorra/repo-template/actions)
-[![Build](https://img.shields.io/github/workflow/status/vidavidorra/repo-template/Build?logo=github&label=Build&style=flat-square)](https://github.com/vidavidorra/repo-template/actions)
+[![Lint commit messages](https://img.shields.io/github/workflow/status/project-zro/projects/Lint%20commit%20messages?logo=github&label=Lint%20commit%20messages&style=flat-square)](https://github.com/project-zro/projects/actions)
+[![Build](https://img.shields.io/github/workflow/status/project-zro/projects/Build?logo=github&label=Build&style=flat-square)](https://github.com/project-zro/projects/actions)
 
 ## Security policy
 
-Please refer to the [Security Policy on GitHub](https://github.com/vidavidorra/repo-template/security/) for the security policy.
+Please refer to the [Security Policy on GitHub](https://github.com/project-zro/projects/security/) for the security policy.
 
 ## License
 

@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vidavidorra/repo-template.git"
+    "url": "git+https://github.com/project-zro/projects.git"
   },
   "author": "Jeroen de Bruijn",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/vidavidorra/repo-template/issues"
+    "url": "https://github.com/project-zro/projects/issues"
   },
-  "homepage": "https://github.com/vidavidorra/repo-template#readme",
+  "homepage": "https://github.com/project-zro/projects#readme",
   "devDependencies": {
     "@commitlint/cli": "13.2.0",
     "@semantic-release/changelog": "6.0.0",
